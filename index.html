@@ -59,7 +59,7 @@ main{padding:0 12px 40px;max-width:560px;margin:0 auto}
 </style><link rel="manifest" href="manifest.json"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png"><meta name="theme-color" content="#1a1a1c"></head><body>
 <div class="tabs" id="tabs"></div><main id="app"></main><div id="rest"></div><div id="bk"></div>
 <script>
-const SPLITS=['Push','Pull','Legs'],TABS=[...SPLITS,'Locker'],KEY='gymlog_v1';
+const SPLITS=['Push','Pull','Legs','Abs'],TABS=[...SPLITS,'Locker'],KEY='gymlog_v1';
 let S={ex:[],logs:{},tab:'Push'},draft={},adding=false,menuId=null,openId=null,cur=null,renId=null,delArm=null,restEnd=0,restLen=90,bkOpen=false,bkDel=false;
 try{const x=JSON.parse(localStorage.getItem(KEY)||'null');if(x)S=Object.assign(S,x)}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
